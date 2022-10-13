@@ -18,13 +18,12 @@
     <header>
         <nav class="navbar py-3">
             <div class="container-fluid">
-              <div class="d-flex w-100" role="search">
-                <img src="css/img/logo.svg" class="px-2 pe-4" alt="...">
+              <div class="header-wrapper d-flex w-100" role="search">
+                <img src="css/img/logo.svg" class="d-none d-lg-block px-2 pe-4" alt="...">
                 <input class="form-control me-2 ps-5" type="search" placeholder="Prova a cercare: Lezioni di Laravel" aria-label="Search">
-                <button class="btn btn-outline-success me-3" type="submit">Search</button>
-                <button class="nav-tools">1</button>
-                <button class="nav-tools">2</button>
-                <button class="nav-tools">3</button>
+                <button class="nav-tools d-none d-lg-block">1</button>
+                <button class="nav-tools d-none d-lg-block">2</button>
+                <button class="nav-tools d-none d-lg-block">3</button>
                 <button class="nav-tools">4</button>
               </div>
             </div>
@@ -32,7 +31,16 @@
     </header>
 
     <main>
-
+        <aside class="d-flex flex-column align-items-center pe-4">
+            <ul class="flex-grow-1 py-4">
+                <li>Home</li>
+                <li>Stats</li>
+                <li>Signals</li>
+            </ul>
+            <div>
+                <a href="#">Admin</a>
+            </div>
+        </aside>
     </main>
     
     <footer>
