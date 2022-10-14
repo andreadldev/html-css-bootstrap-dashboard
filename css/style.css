@@ -2,11 +2,19 @@
 @import "common.css";
 @import "typography.css";
 
-header nav {
-    background-color: beige;
-    z-index: 10;
+body {
+    overflow-x: hidden;
+    padding-top: 70px;
 }
 
+/* ===================
+   -------HEADER------
+   =================== */
+
+header nav {
+    z-index: 10;
+    background-color: white;
+}
 
 .nav-tools {
     padding: 0 10px;
@@ -17,13 +25,13 @@ header nav {
     content: "";
     display: flex;
     min-width: 47px;
-    height: 40px;
+    height: 38px;
     margin-right: 20px;
     background-image: url('img/mobile-logo.png');
     background-size: cover;
     background-position: center;
     position: relative;
-    top: -1px;
+    top: 0;
     left: -1px;
 }
 
@@ -33,10 +41,13 @@ header nav {
     }
 }
 
+/* ===================
+   -------ASIDE-------
+   =================== */
 
 aside {
-    background-color: darkblue;
-    color: orange;
+    background-color: #061e34;
+    background-image: url('img/sidebar-bg.png');
     width: 140px;
     height: 100%;
     padding-left: 15px;
@@ -50,4 +61,29 @@ aside {
 
 aside a {
     color: red;
+}
+
+/* ===================
+   -------INNER-------
+   =================== */
+
+#inner {
+    padding-left: 150px;
+}
+
+#inner-top {
+    background-color: #1c71e8;
+    color: white;
+}
+
+.badge {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#inner table {
+    width: 95%;
+}
+
+#inner table img {
+    width: 23px;
 }
