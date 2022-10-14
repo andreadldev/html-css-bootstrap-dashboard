@@ -2,6 +2,15 @@
     font-family: 'Roboto', sans-serif;
 }
 
+aside a {
+    color: white;
+    text-decoration: none;
+}
+
+aside a:hover {
+    color: lightgray;
+}
+
 #inner h1 {
     font-size: 2rem;
 }

@@ -48,7 +48,7 @@ header nav {
 aside {
     background-color: #061e34;
     background-image: url('img/sidebar-bg.png');
-    width: 140px;
+    width: 70px;
     height: 100%;
     padding-left: 15px;
     padding-top: 70px;
@@ -59,8 +59,30 @@ aside {
     left: 0;
 }
 
-aside a {
-    color: red;
+aside i {
+    margin-left: 5px;
+    margin-top: 15px;
+}
+
+aside li:nth-child(2) span{
+    position: relative;
+    left: 4px;
+}
+
+aside div * {
+    margin-bottom: 30px;
+}
+
+@media screen and (min-width: 992px) {
+
+    aside {
+        width: 140px;
+    }
+
+    aside i {
+        margin-left: 0;
+        margin-right: 10px;
+    }
 }
 
 /* ===================
@@ -68,7 +90,13 @@ aside a {
    =================== */
 
 #inner {
-    padding-left: 150px;
+    padding-left: 80px;
+}
+
+@media screen and (min-width: 992px) {
+    #inner {
+        padding-left: 150px;
+    }
 }
 
 #inner-top {
