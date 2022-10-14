@@ -33,6 +33,7 @@ aside a:hover {
 }
 
 #todo *,
-.graph-info span {
+.graph-info span,
+.accordion * {
     white-space: normal;
 }
