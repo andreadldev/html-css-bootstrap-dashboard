@@ -3,8 +3,22 @@
     white-space: nowrap;
 }
 
-#inner-top #number {
-    font-size: 1.5rem ;
+#inner-top #students-number {
+    font-size: 1.7rem ;
+}
+
+@media screen and (min-width: 992px) {
+
+    #inner-top #students {
+        position: relative;
+        top: -8px;
+    }
+    
+    #inner-top #students-number {
+        font-size: 1.7rem ;
+        position: relative;
+        top: -5px;
+    }
 }
 
 aside a {
