@@ -123,3 +123,35 @@ aside div * {
         padding-left: 150px;
     }
 }
+
+#graph {
+    position: relative;
+    top: 0;
+}
+
+.graph-info span,
+.graph-info li {
+    border-bottom: 1px solid lightgray;
+
+}
+
+.graph-info * {
+    padding-left: 10px;
+}
+
+.graph-info li {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+@media screen and (min-width: 992px) {
+    #graph {
+        top: -200px;
+    }
+}
+
+@media screen and (min-width: 1300px) {
+    #graph {
+        top: -260px;
+    }
+}

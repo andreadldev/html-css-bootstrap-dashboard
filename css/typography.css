@@ -1,5 +1,6 @@
 * {
     font-family: 'Roboto', sans-serif;
+    white-space: nowrap;
 }
 
 #inner-top #number {
@@ -23,6 +24,15 @@ aside a:hover {
     font-size: 1.6rem;
 }
 
+#inner h5 {
+    font-weight: 500;
+}
+
 #inner table th {
     font-weight: 400;
+}
+
+#todo *,
+.graph-info span {
+    white-space: normal;
 }
