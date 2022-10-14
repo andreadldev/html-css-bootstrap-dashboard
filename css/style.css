@@ -93,19 +93,21 @@ aside div * {
     padding-left: 80px;
 }
 
-@media screen and (min-width: 992px) {
-    #inner {
-        padding-left: 150px;
-    }
-}
-
 #inner-top {
     background-color: #1c71e8;
     color: white;
 }
 
+#inner-top .badge {
+    margin-left: 5px;
+}
+
+#inner-top span:first-child.badge {
+    margin-right: 5px;
+}
+
 .badge {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.2);
 }
 
 #inner table {
@@ -114,4 +116,10 @@ aside div * {
 
 #inner table img {
     width: 23px;
+}
+
+@media screen and (min-width: 992px) {
+    #inner {
+        padding-left: 150px;
+    }
 }

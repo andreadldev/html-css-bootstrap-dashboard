@@ -2,6 +2,10 @@
     font-family: 'Roboto', sans-serif;
 }
 
+#inner-top #number {
+    font-size: 1.5rem ;
+}
+
 aside a {
     color: white;
     text-decoration: none;
