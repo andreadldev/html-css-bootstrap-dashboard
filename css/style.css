@@ -185,6 +185,17 @@ main {
     margin-top: -3px;
 }
 
+#inner table .badge.text-bg-warning {
+    position: relative;
+    left: -6px;
+    color: white !important;
+}
+
+#inner table .badge.text-bg-danger {
+    position: relative;
+    left: -2px;
+}
+
 @media screen and (min-width: 992px) {
     #inner {
         padding-left: 150px;
