@@ -16,6 +16,7 @@
 <body>
 
     <header>
+        <!-- NAVBAR -->
         <nav class="navbar fixed-top py-3">
             <div class="container-fluid">
                 <div class="header-wrapper position-relative d-flex w-100" role="search">
@@ -27,10 +28,17 @@
                     </button>
                     <button class="nav-tools d-none d-lg-block">
                         <i class="fa-solid fa-circle-question"></i>
-                    </button>
-                    <button class="nav-tools d-none d-lg-block">
-                        <i class="fa-solid fa-ellipsis-vertical"></i>
-                    </button>
+                    </button>  
+                    <div class="dropdown">
+                        <button class="nav-tools d-none d-lg-block" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                            <li><a class="dropdown-item" href="#">Profilo</a></li>
+                            <li><a class="dropdown-item" href="#">Fatturazione</a></li>
+                            <li><a class="dropdown-item" href="#">Logout</a></li>
+                        </ul>
+                    </div>
                     <button class="nav-tools">
                         <i class="fa-solid fa-bell"></i>
                     </button>
@@ -40,6 +48,7 @@
     </header>
 
     <main>
+        <!-- ASIDE -->
         <aside class="d-flex flex-column align-items-center pe-4">
             <ul class="flex-grow-1 py-4">
                 <li>
@@ -70,6 +79,7 @@
         </aside>
 
         <div id="inner">
+            <!-- SEZIONE INTERNA SUPERIORE BLU -->
             <section class="row d-flex py-4" id="inner-top">
                 <div class="col-12 col-lg-8">
                     <div class="d-flex align-items-center">
@@ -329,9 +339,6 @@
             </section>
         </div>
     </main>
-    
-    <footer>
-    </footer>
     
 </body>
 <!-- JavaScript Bundle with Popper -->

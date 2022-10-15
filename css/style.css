@@ -70,6 +70,15 @@ header nav {
 
 .header-wrapper button:last-child {
     color: orange;
+    margin-top: 2px;
+}
+
+.dropdown {
+    margin-top: 1px;
+}
+
+.dropdown button i {
+    padding: 10px 5px;
 }
 
 @media screen and (min-width: 992px) {
