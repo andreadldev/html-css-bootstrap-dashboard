@@ -30,6 +30,10 @@ aside a:hover {
     color: lightgray;
 }
 
+aside a:active {
+    color: darkgrey;
+}
+
 #inner h1 {
     font-size: 2rem;
 }

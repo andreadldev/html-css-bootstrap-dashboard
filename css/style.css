@@ -57,6 +57,15 @@ header nav {
     background-color: transparent;
     border: none;
     color: grey;
+    border-radius: 5px;
+}
+
+.header-wrapper button:hover {
+    background-color: lightgray;
+}
+
+.header-wrapper button:active {
+    background-color: darkgray;
 }
 
 .header-wrapper button:last-child {
