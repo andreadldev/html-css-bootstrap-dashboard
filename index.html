@@ -18,13 +18,22 @@
     <header>
         <nav class="navbar fixed-top py-3">
             <div class="container-fluid">
-              <div class="header-wrapper d-flex w-100" role="search">
+              <div class="header-wrapper position-relative d-flex w-100" role="search">
                 <img src="css/img/logo.svg" class="d-none d-lg-block px-2 pe-4" alt="...">
+                <i class="fa-solid fa-magnifying-glass"></i>
                 <input class="form-control me-2 ps-5" type="search" placeholder="Prova a cercare: Lezioni di Laravel" aria-label="Search">
-                <button class="nav-tools d-none d-lg-block">1</button>
-                <button class="nav-tools d-none d-lg-block">2</button>
-                <button class="nav-tools d-none d-lg-block">3</button>
-                <button class="nav-tools">4</button>
+                <button class="nav-tools d-none d-lg-block">
+                    <i class="fa-solid fa-list"></i>
+                </button>
+                <button class="nav-tools d-none d-lg-block">
+                    <i class="fa-solid fa-circle-question"></i>
+                </button>
+                <button class="nav-tools d-none d-lg-block">
+                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                </button>
+                <button class="nav-tools">
+                    <i class="fa-solid fa-bell"></i>
+                </button>
               </div>
             </div>
           </nav>
@@ -85,131 +94,131 @@
             <section>
                 <!-- CARD PROSSIME CLASSI -->
                 <div class="row">
-                    <div class="col-12 col-lg-8 pt-4 pe-4">
+                    <div class="col-12 col-lg-8 pt-4 pe-4 pe-lg-2">
                         <div class="card">
                             <div class="card-header">
                                 <h2>Prossime classi</h2>
                             </div>
-                            <table class="table m-auto">
+                            <table class="table m-auto" >
                                 <thead>
                                     <tr>
-                                        <th scope="col" class="col-6 pt-4">Nome</th>
-                                        <th scope="col" class="d-none d-md-table-cell">Data inizio</th>
-                                        <th scope="col" class="d-none d-sm-table-cell">ROI</th>
-                                        <th scope="col">Stato</th>
-                                        <th scope="col">Azioni</th>
+                                        <th colspan="3"  scope="col" class="col-6 pt-4">Nome</th>
+                                        <th scope="col" class="d-none d-md-table-cell ps-3">Data inizio</th>
+                                        <th scope="col" class="d-none d-sm-table-cell ps-2">ROI</th>
+                                        <th class="ps-2" scope="col">Stato</th>
+                                        <th class="ps-3" scope="col">Azioni</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <th scope="row">
+                                        <th colspan="3" scope="row">
                                             <img src="css/img/class-avatar.jpg" class="align-top me-2" alt="...">
                                             <span>Classe 75</span>
                                         </th>
                                         <td class="d-none d-md-table-cell">15 Feb 2021</td>
                                         <td class="d-none d-sm-table-cell">20%</td>
-                                        <td><div class="badge">Done</div></td>
+                                        <td><div class="badge text-bg-success">Done</div></td>
                                         <td>
-                                            <button><i class="fa-solid fa-pencil"></i></button>
-                                            <button><i class="fa-solid fa-trash"></i></button>              
+                                            <button class="btn btn-outline-dark"><i class="fa-solid fa-pencil"></i></button>
+                                            <button class="btn btn-outline-dark"><i class="fa-solid fa-trash"></i></button>              
                                         </td>
                                     </tr>
 
                                     <tr>
-                                        <th scope="row">
+                                        <th colspan="3" scope="row">
                                             <img src="css/img/class-avatar.jpg" class="align-top me-2" alt="...">
                                             <span>Classe 76</span>
                                         </th>
-                                        <td class="d-none d-md-table-cell">15 Feb 2021</td>
+                                        <td class="d-none d-md-table-cell">16 Feb 2021</td>
                                         <td class="d-none d-sm-table-cell">20%</td>
-                                        <td><div class="badge">Done</div></td>
+                                        <td><div class="badge text-bg-success">Done</div></td>
                                         <td>
-                                            <button><i class="fa-solid fa-pencil"></i></button>
-                                            <button><i class="fa-solid fa-trash"></i></button>              
+                                            <button class="btn btn-outline-dark"><i class="fa-solid fa-pencil"></i></button>
+                                            <button class="btn btn-outline-dark"><i class="fa-solid fa-trash"></i></button>              
                                         </td>
                                     </tr>
 
                                     <tr>
-                                        <th scope="row">
+                                        <th colspan="3" scope="row">
                                             <img src="css/img/class-avatar.jpg" class="align-top me-2" alt="...">
                                             <span>Classe 77</span>
                                         </th>
-                                        <td class="d-none d-md-table-cell">15 Feb 2021</td>
+                                        <td class="d-none d-md-table-cell">17 Feb 2021</td>
                                         <td class="d-none d-sm-table-cell">20%</td>
-                                        <td><div class="badge">Done</div></td>
+                                        <td><div class="badge text-bg-warning">Done</div></td>
                                         <td>
-                                            <button><i class="fa-solid fa-pencil"></i></button>
-                                            <button><i class="fa-solid fa-trash"></i></button>              
+                                            <button class="btn btn-outline-dark"><i class="fa-solid fa-pencil"></i></button>
+                                            <button class="btn btn-outline-dark"><i class="fa-solid fa-trash"></i></button>              
                                         </td>
                                     </tr>
 
                                     <tr>
-                                        <th scope="row">
+                                        <th colspan="3" scope="row">
                                             <img src="css/img/class-avatar.jpg" class="align-top me-2" alt="...">
                                             <span>Classe 78</span>
                                         </th>
-                                        <td class="d-none d-md-table-cell">15 Feb 2021</td>
+                                        <td class="d-none d-md-table-cell">18 Feb 2021</td>
                                         <td class="d-none d-sm-table-cell">20%</td>
-                                        <td><div class="badge">Done</div></td>
+                                        <td><div class="badge text-bg-success">Done</div></td>
                                         <td>
-                                            <button><i class="fa-solid fa-pencil"></i></button>
-                                            <button><i class="fa-solid fa-trash"></i></button>              
+                                            <button class="btn btn-outline-dark"><i class="fa-solid fa-pencil"></i></button>
+                                            <button class="btn btn-outline-dark"><i class="fa-solid fa-trash"></i></button>              
                                         </td>
                                     </tr>
 
                                     <tr>
-                                        <th scope="row">
+                                        <th colspan="3" scope="row">
                                             <img src="css/img/class-avatar.jpg" class="align-top me-2" alt="...">
                                             <span>Classe 79</span>
                                         </th>
-                                        <td class="d-none d-md-table-cell">15 Feb 2021</td>
+                                        <td class="d-none d-md-table-cell">19 Feb 2021</td>
                                         <td class="d-none d-sm-table-cell">20%</td>
-                                        <td><div class="badge">Done</div></td>
+                                        <td><div class="badge text-bg-danger">Done</div></td>
                                         <td>
-                                            <button><i class="fa-solid fa-pencil"></i></button>
-                                            <button><i class="fa-solid fa-trash"></i></button>              
+                                            <button class="btn btn-outline-dark"><i class="fa-solid fa-pencil"></i></button>
+                                            <button class="btn btn-outline-dark"><i class="fa-solid fa-trash"></i></button>              
                                         </td>
                                     </tr>
                                     
                                     <tr>
-                                        <th scope="row">
+                                        <th colspan="3" scope="row">
                                             <img src="css/img/class-avatar.jpg" class="align-top me-2" alt="...">
                                             <span>Classe 80</span>
                                         </th>
-                                        <td class="d-none d-md-table-cell">15 Feb 2021</td>
+                                        <td class="d-none d-md-table-cell">20 Feb 2021</td>
                                         <td class="d-none d-sm-table-cell">20%</td>
-                                        <td><div class="badge">Done</div></td>
+                                        <td><div class="badge text-bg-success">Done</div></td>
                                         <td>
-                                            <button><i class="fa-solid fa-pencil"></i></button>
-                                            <button><i class="fa-solid fa-trash"></i></button>              
+                                            <button class="btn btn-outline-dark"><i class="fa-solid fa-pencil"></i></button>
+                                            <button class="btn btn-outline-dark"><i class="fa-solid fa-trash"></i></button>              
                                         </td>
                                     </tr>
                                     
                                     <tr>
-                                        <th scope="row">
+                                        <th colspan="3" scope="row">
                                             <img src="css/img/class-avatar.jpg" class="align-top me-2" alt="...">
                                             <span>Classe 81</span>
                                         </th>
-                                        <td class="d-none d-md-table-cell">15 Feb 2021</td>
+                                        <td class="d-none d-md-table-cell">21 Feb 2021</td>
                                         <td class="d-none d-sm-table-cell">20%</td>
-                                        <td><div class="badge">Done</div></td>
+                                        <td><div class="badge text-bg-danger">Done</div></td>
                                         <td>
-                                            <button><i class="fa-solid fa-pencil"></i></button>
-                                            <button><i class="fa-solid fa-trash"></i></button>              
+                                            <button class="btn btn-outline-dark"><i class="fa-solid fa-pencil"></i></button>
+                                            <button class="btn btn-outline-dark"><i class="fa-solid fa-trash"></i></button>              
                                         </td>
                                     </tr>
                                     
-                                    <tr>
-                                        <th scope="row">
+                                    <tr class="border border-white">
+                                        <th colspan="3" scope="row">
                                             <img src="css/img/class-avatar.jpg" class="align-top me-2" alt="...">
                                             <span>Classe 82</span>
                                         </th>
-                                        <td class="d-none d-md-table-cell">15 Feb 2021</td>
+                                        <td class="d-none d-md-table-cell">22 Feb 2021</td>
                                         <td class="d-none d-sm-table-cell">20%</td>
-                                        <td><div class="badge">Done</div></td>
+                                        <td><div class="badge text-bg-success">Done</div></td>
                                         <td>
-                                            <button><i class="fa-solid fa-pencil"></i></button>
-                                            <button><i class="fa-solid fa-trash"></i></button>              
+                                            <button class="btn btn-outline-dark"><i class="fa-solid fa-pencil"></i></button>
+                                            <button class="btn btn-outline-dark"><i class="fa-solid fa-trash"></i></button>              
                                         </td>
                                     </tr>
                                 </tbody>
@@ -252,7 +261,7 @@
             <section>
                 <!-- CARD FAQ -->
                 <div class="row">
-                    <div class="col-12 col-lg-8 pt-4 pe-4">
+                    <div class="col-12 col-lg-8 pt-4 pe-4 pe-lg-2 mb-3">
                         <div class="card">
                             <div class="card-header">
                                 <h2>F.A.Q.</h2>
@@ -260,11 +269,11 @@
                             <div class="accordion accordion-flush p-4" id="accordionExample">
                                 <div class="accordion-item">
                                     <h2 class="accordion-header" id="headingOne">
-                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
                                         Come aggiungere una nuova classe?
                                         </button>
                                     </h2>
-                                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                    <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                                         <div class="accordion-body">
                                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, consectetur. Expedita, odio nesciunt iste modi natus quidem quas saepe laboriosam aliquid quam! Omnis, quidem! Voluptate quod odio earum nostrum eius.
                                         </div>
@@ -299,7 +308,7 @@
                     </div>
                 
                     <!-- CARD GRAFICO -->
-                    <div class="col-lg-4 pt-3 pe-4" id="graph">
+                    <div class="col-lg-4 pt-2 pe-4 mb-4" id="graph">
                         <div class="card p-3">
                             <div class="card">
                                 <img src="css/img/stats.jpeg" class="rounded-top" alt="...">

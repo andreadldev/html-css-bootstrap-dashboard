@@ -3,8 +3,9 @@
 @import "typography.css";
 
 body {
-    overflow-x: hidden;
+    overflow: hidden;
     padding-top: 70px;
+    height: 100vh;
 }
 
 /* ===================
@@ -14,6 +15,7 @@ body {
 header nav {
     z-index: 10;
     background-color: white;
+    box-shadow: 0px 0px 5px 2px rgb(0 0 0 / 10%);
 }
 
 .nav-tools {
@@ -35,9 +37,39 @@ header nav {
     left: -1px;
 }
 
+.header-wrapper .fa-magnifying-glass {
+    position: absolute;
+    left: 82px;
+    top: 11px;
+    pointer-events: none;
+}
+
+.header-wrapper input {
+    background-color: rgba(128, 128, 128, 0.2);
+    transition: background-color 0.2s;
+}
+
+.header-wrapper input:focus {
+    background-color: transparent;
+}
+
+.header-wrapper button {
+    background-color: transparent;
+    border: none;
+    color: grey;
+}
+
+.header-wrapper button:last-child {
+    color: orange;
+}
+
 @media screen and (min-width: 992px) {
     .header-wrapper::before {
         display: none;
+    }
+
+    .header-wrapper .fa-magnifying-glass {
+        left: 180px;
     }
 }
 
@@ -89,8 +121,15 @@ aside div * {
    -------INNER-------
    =================== */
 
+main {
+    height: 100%;
+}
+
 #inner {
     padding-left: 80px;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 
 #inner-top {
@@ -114,19 +153,32 @@ aside div * {
     width: 95%;
 }
 
+#inner table thead th:nth-child(4) {
+    position: relative;
+    left: 3px;
+}
+
 #inner table img {
     width: 23px;
+}
+
+#inner table i {
+    color: grey;
+    position: relative;
+    left: -5px;
+    top: -3px;
+}
+
+#inner table .btn {
+    height: 30px;
+    width: 30px;
+    margin-top: -3px;
 }
 
 @media screen and (min-width: 992px) {
     #inner {
         padding-left: 150px;
     }
-}
-
-#graph {
-    position: relative;
-    top: 0;
 }
 
 .graph-info span,
@@ -146,12 +198,12 @@ aside div * {
 
 @media screen and (min-width: 992px) {
     #graph {
-        top: -200px;
+        margin-top: -180px;
     }
 }
 
-@media screen and (min-width: 1300px) {
+@media screen and (min-width: 1294px) {
     #graph {
-        top: -250px;
+        margin-top: -230px;
     }
 }
