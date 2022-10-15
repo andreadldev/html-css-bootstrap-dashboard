@@ -73,6 +73,14 @@ header nav {
     color: orange;
 }
 
+.dropdown {
+    margin-top: 1px;
+}
+
+ul.dropdown-menu {
+    margin-left: -115px;
+}
+
 @media screen and (min-width: 992px) {
     .header-wrapper::before {
         display: none;
