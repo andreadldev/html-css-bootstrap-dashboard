@@ -107,8 +107,31 @@
                 <div class="row">
                     <div class="col-12 col-lg-8 pt-4 pe-4 pe-lg-2">
                         <div class="card">
-                            <div class="card-header">
+                            <div class="card-header d-flex justify-content-between">
                                 <h2>Prossime classi</h2>
+                                <button class="btn btn-outline-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><strong>+</strong></button>
+                                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                                    <div class="offcanvas-header">
+                                        <h5 class="offcanvas-title" id="offcanvasRightLabel">Aggiungi Classe</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                    </div>
+                                    <div class="offcanvas-body">
+                                        <form>
+                                            <div class="mb-3">
+                                                <label for="InputText" class="form-label">Nome</label>
+                                                <input type="text" placeholder="Classe ---" class="form-control" id="InputText">
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="InputDate" class="form-label">Data Inizio</label>
+                                                <input type="date" class="form-control" id="InputDate">
+                                            </div>
+                                            <form>
+                                                <input class="btn btn-primary" type="submit" value="Salva">
+                                                <input class="btn btn-warning" type="reset" value="Reset">
+                                            </form> 
+                                        </form>
+                                    </div>
+                                </div>
                             </div>
                             <table class="table m-auto" >
                                 <thead>
