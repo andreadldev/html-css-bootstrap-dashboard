@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <!-- <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.0.0/Chart.js"></script> 
 </head>
 <body>
 
@@ -345,7 +347,9 @@
                     <div class="col-lg-4 pt-2 pe-4 mb-4" id="graph">
                         <div class="card p-3">
                             <div class="card">
-                                <img src="css/img/stats.jpeg" class="rounded-top" alt="...">
+                                <div class="pt-5 pe-5 mb-2">
+                                    <canvas id="myChart" width="400" height="400"></canvas>
+                                </div>
                                 <div class="graph-info">
                                     <h5>Utenti attivi</h5>
                                     <span class="d-block pb-3">Lista degli utenti attivi in piattaforma nell'ultimo mese</span>
@@ -363,8 +367,8 @@
             </section>
         </div>
     </main>
-    
 </body>
+<script src="mychart.js"></script> 
 <!-- JavaScript Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 </html>
